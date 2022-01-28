@@ -115,8 +115,8 @@ const DOM = {
 
 const Utils = {
     formatAmount(value) {
-        value = Number(value) * 100
-        return value
+        value = value * 100
+        return Math.round(value)
     },
 
     formatDate(date) {
@@ -218,11 +218,7 @@ const App = {
 
 App.init()
 
-// Transaction.add({
-//     description: 'ALO',
-//     amount: 200,
-//     date: '25/02/2023'
-// })
+
 
 
 
